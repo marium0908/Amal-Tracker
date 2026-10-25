@@ -1,0 +1,6 @@
+{
+  "name": "Zikr Counter",
+  "description": "A customizable Dhikr (remembrance) counter and tracker with support for adding custom supplications, setting target counts, sound feedback, and session history logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
