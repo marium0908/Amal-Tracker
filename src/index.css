@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", Georgia, serif;
+
+  /* Custom Palette matching the BlessingsArtDesign image */
+  --color-warm-cream-light: #FCF9F6;
+  --color-warm-cream: #FAF0EE; /* Lovely pinkish-cream base */
+  --color-warm-cream-dark: #EADCD9;
+  --color-espresso: #4E3E37; /* Soft cocoa/charcoal instead of pure black */
+  --color-espresso-light: #7E6C64;
+  --color-espresso-muted: #A3928A;
+
+  /* Pastel Green (Sage) */
+  --color-pastel-green-bg: #E7EFEA;
+  --color-pastel-green: #BAD8C8;
+  --color-pastel-green-dark: #6B8E7D;
+
+  /* Pastel Rose / Pink */
+  --color-pastel-rose-bg: #FDF1EF;
+  --color-pastel-rose: #FCDAD7;
+  --color-pastel-rose-dark: #E79C93;
+
+  /* Pastel Yellow (Peach/Banana) */
+  --color-pastel-yellow-bg: #FFF9ED;
+  --color-pastel-yellow: #FFF2D5;
+  --color-pastel-yellow-dark: #D4B282;
+
+  /* Pastel Blue/Teal */
+  --color-pastel-blue-bg: #EBF1F5;
+  --color-pastel-blue: #D9E3EA;
+  --color-pastel-blue-dark: #829DB0;
+
+  /* Pastel Lavender/Purple */
+  --color-pastel-purple-bg: #F4EFF6;
+  --color-pastel-purple: #E2DBE9;
+  --color-pastel-purple-dark: #A392B2;
+}
+
+/* Cute gingham checkered pattern */
+.bg-gingham {
+  background-color: #FAF0EE;
+  background-image: 
+    linear-gradient(90deg, rgba(253, 218, 215, 0.45) 50%, transparent 50%),
+    linear-gradient(rgba(253, 218, 215, 0.45) 50%, transparent 50%);
+  background-size: 40px 40px;
+}
+
+/* Rounded, cute "sticker" border shadow style */
+.sticker-shadow {
+  box-shadow: 4px 4px 0px 0px #4E3E37;
+}
+
+.sticker-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #4E3E37;
+}
+
+.sticker-shadow-hover {
+  transition: all 0.2s ease;
+}
+.sticker-shadow-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #4E3E37;
+}
+
+/* Custom subtle scrollbar styling for the log history and library lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(244, 245, 246, 0.5);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(203, 213, 225, 0.8);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.8);
+}
